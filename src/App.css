@@ -1,38 +1,109 @@
 .App {
+  margin: 0 auto;
+  background-color: #5e503f;
+}
+
+.draw .MuiDrawer-paperAnchorRight {
+  background: #a9927d;
+}
+
+.draw div {
+  padding: 2.2em 0em;
+}
+
+.listItem {
+  color: #f2f4f3;
+  border-bottom: 0.001em solid #f2f4f3;
+  cursor: pointer;
+  font-family: lato;
+  letter-spacing: 0.3rem;
+  font-size: 1.1rem;
+  background-color: #a9927d;
+}
+
+.listItem:hover {
+  color: #a9927d;
+  background-color: #f2f4f3;
+}
+
+.listDiv > .listItem:first-child {
+  border-top: 0.001em solid #f2f4f3;
+}
+
+/* Hex Codes: #0a0908, #49111c, #f2f4f3, #a9927d, #5e503f */
+
+.hero_wrapper {
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero_img {
+  background-image: 
+    /* top, transparent red */ linear-gradient(
+      rgba(73, 17, 28, 0.842),
+      rgba(73, 17, 28, 0.842)
+    ),
+    url(img/bar-209148_1920.jpg);
+
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "newfont";
+  src: url("./fonts/NolluqapersonaluseRegular-VGMge.otf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title_wrapper {
+  padding: 25em;
+  margin: 0 auto;
+}
+
+.title_wrapper h2 {
+  /*color: rgba(255, 255, 255, 0.801);*/
+  color: #d1c7bb;
+  font-family: newfont;
+  font-size: 6rem;
+  letter-spacing: 26px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-div {
+}
+
+.extraspace {
+  height: 500px;
+}
+
+.card_wrapper {
+  margin-top: 4em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.cardimg .MuiCardMedia-img {
+  position: absolute;
+  top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Food*/
+.food_section {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 70%;
+  position: relative;
+  padding: 2em;
+}
+
+.food_title {
+  position: absolute;
+  top: -1em;
+}
+
+.food_main {
 }
