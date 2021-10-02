@@ -8,7 +8,7 @@ import { MenuDraw } from './MenuDraw'
 import { styled } from '@mui/material/styles';
 
   const StyledBar = styled(AppBar)`
- 
+
   background-color:${props => props.toggle ? '#49111c' : 'transparent'};
   transition: all 1s ease-out;
     transform:${props => props.toggle ? 'translate(0px,0px)' : 'translate(0px,-100px)'} ;`
@@ -38,7 +38,7 @@ const Mainbar = () => {
       <StyledBar toggle={toggle}>
         <Toolbar>
           <Box className="nav_title" sx={{flexGrow:1}}>
-            <h2 className="nav_title-text" sx={{textAlign:'left'}}>Your Pub</h2>
+            <h2 className="nav_title-text" sx={{textAlign:'left'}}>Royal Oak</h2>
           </Box>
          <IconButton onClick={() => openDraw()}>
            <MenuIcon/>

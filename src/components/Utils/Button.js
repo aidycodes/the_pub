@@ -10,10 +10,19 @@ border-color: #5e503f;
  &:hover {
      border-color:#5e503f;
  }
+  @media (max-width: 800px) {
+    padding:5px 20px;
+  }
+    @media (max-width: 500px) {
+        margin-top:2rem;
+    padding:3px 15px;
+    font-size:1rem;
+  }
+
 
 `
  
-const MainButton = ( { text } ) => {
+const MainButton = ( { text, type } ) => {
     return (
     <StyledButton  variant="outlined"> {text}</StyledButton>
     )

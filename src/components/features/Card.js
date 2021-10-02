@@ -12,7 +12,7 @@ import { lineHeight } from '@mui/system';
 
 const FeatureCard = styled(Card)`
 padding:2em;
-margin:1em;
+
 color:#49111c;
 
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -47,7 +47,7 @@ export default function MediaCard() {
 
 
   return (
-     <FeatureCard sx={{ maxWidth: 345 }}>
+     <FeatureCard className="featcard" >
          <Typography sx={{...obj}} gutterBottom variant="h5" component="div">
           Food
         </Typography>
@@ -59,7 +59,7 @@ export default function MediaCard() {
       />
       <CardContent>
       
-        <Typography variant="body2" color="#49111c">
+        <Typography className='card_text' variant="body2" color="#49111c">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam doloremque tempore nihil velit. Possimus architecto consequatur vel, omnis consequuntur iure minima dignissimos suscipit laborum quisquam incidunt eveniet, doloremque obcaecati?
         </Typography>
       </CardContent>

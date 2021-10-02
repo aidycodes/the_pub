@@ -1,0 +1,120 @@
+/*Food*/
+.food_section {
+  margin: 4em auto;
+  background-image: linear-gradient(
+      90deg,
+      rgb(94, 80, 63) 0%,
+      rgba(94, 80, 63, 0.1) 5%,
+      rgb(94, 80, 63, 0.1) 90%,
+      rgba(94, 80, 63) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(94, 80, 63) 0%,
+      rgba(94, 80, 63, 0.1) 20%,
+      rgb(94, 80, 63, 0.1) 90%,
+      rgba(94, 80, 63) 100%
+    ),
+    url(components/food/img/image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 70%;
+  position: relative;
+  padding: 2rem;
+}
+
+.food_title {
+  position: absolute;
+  font-size: 8em;
+  top: -2rem;
+  font-family: appleberry;
+}
+
+.food_main {
+  display: flex;
+
+  margin: 1em;
+  margin-top: 10em;
+}
+
+.food_main > div {
+  margin: 2em;
+  font-size: 1.4rem;
+}
+
+.food_main-column1 {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.food_main-column1 > div {
+  margin: 0.2em;
+  font-family: roboto;
+  line-height: 2.4rem;
+  color: #1d1d1d;
+}
+
+.food_main-column1-row1 {
+  background-color: rgba(196, 219, 226, 0.884);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  flex-grow: 0;
+  margin: 4em;
+
+  box-shadow: 5px 5px 2rem rgba(255, 255, 255, 0.2);
+}
+
+.food_main-column1-row2 {
+  position: relative;
+  height: 12rem;
+  margin: 4rem auto;
+}
+
+.food_main-text {
+  text-align: center;
+  background-color: rgba(255, 192, 203, 0.205);
+  padding: 1.4rem;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+
+  width: 50%;
+  margin: 0 auto;
+}
+
+.food_main-column2 {
+}
+
+.food_offers-card {
+  opacity: 0;
+  margin-top: 10rem;
+  border-radius: 2%;
+  text-align: center;
+  height: 7em;
+  width: 9em;
+  background-color: rgba(78, 1, 1, 0.452);
+  color: rgba(251, 254, 255, 0.884);
+  font-size: 3rem;
+  font-family: vegan;
+  border: rgb(83, 182, 108) solid 5px;
+}
+
+.food_offers-title {
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: underline;
+}
+
+.food_offers-main {
+  font-size: 2rem;
+}
+
+.food_buttons {
+  text-align: center;
+  margin-left: 0rem;
+}

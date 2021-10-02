@@ -1,5 +1,13 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
 .App {
-  margin: 0 auto;
+  width: 100%;
   background-color: #5e503f;
 }
 
@@ -56,6 +64,15 @@
   font-family: "newfont";
   src: url("./fonts/NolluqapersonaluseRegular-VGMge.otf");
 }
+@font-face {
+  font-family: "appleberry";
+  src: url("./fonts/appleberry.ttf");
+}
+
+@font-face {
+  font-family: "vegan";
+  src: url("./fonts/VeganStylePersonalUse-5Y58.ttf");
+}
 
 .title_wrapper {
   padding: 25em;
@@ -70,9 +87,6 @@
   letter-spacing: 26px;
   margin: 0 auto;
   text-align: center;
-}
-
-.button-div {
 }
 
 .extraspace {
@@ -90,20 +104,320 @@
   position: absolute;
   top: 10px;
 }
-
+.featcard {
+  max-width: 20%;
+  margin: 1rem;
+}
 /*Food*/
 .food_section {
-  margin: 0 auto;
-  background-color: #fff;
+  margin: 4em auto;
+  background-image: linear-gradient(
+      90deg,
+      rgb(94, 80, 63) 0%,
+      rgba(94, 80, 63, 0.1) 5%,
+      rgb(94, 80, 63, 0.1) 90%,
+      rgba(94, 80, 63) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(94, 80, 63) 0%,
+      rgba(94, 80, 63, 0.1) 20%,
+      rgb(94, 80, 63, 0.1) 90%,
+      rgba(94, 80, 63) 100%
+    ),
+    url(components/food/img/image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 70%;
   position: relative;
-  padding: 2em;
+  padding: 2rem;
 }
 
 .food_title {
   position: absolute;
-  top: -1em;
+  font-size: 8em;
+  top: -2rem;
+  font-family: appleberry;
 }
 
 .food_main {
+  display: flex;
+
+  margin: 1em;
+  margin-top: 10em;
+}
+
+.food_main > div {
+  margin: 2em;
+  font-size: 1.4rem;
+}
+
+.food_main-column1 {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.food_main-column1 > div {
+  margin: 0.2em;
+  font-family: roboto;
+  line-height: 2.4rem;
+  color: #1d1d1d;
+}
+
+.food_main-column1-row1 {
+  background-color: rgba(196, 219, 226, 0.884);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  flex-grow: 0;
+  margin: 4rem;
+
+  box-shadow: 5px 5px 2rem rgba(255, 255, 255, 0.2);
+}
+
+.food_main-column1-row2 {
+  position: relative;
+  height: 12rem;
+  margin: 4rem auto;
+}
+
+.food_main-text {
+  text-align: center;
+  background-color: rgba(255, 192, 203, 0.205);
+  padding: 1.4rem;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+
+  width: 50%;
+  margin: 0 auto;
+}
+
+.food_offers-card {
+  opacity: 0;
+  margin-top: 10rem;
+  border-radius: 2%;
+  text-align: center;
+  height: 7em;
+  width: 9em;
+  background-color: rgba(78, 1, 1, 0.452);
+  color: rgba(251, 254, 255, 0.884);
+  font-size: 3rem;
+  font-family: vegan;
+  border: rgb(83, 182, 108) solid 5px;
+}
+
+.food_offers-title {
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: underline;
+}
+
+.food_offers-main {
+  font-size: 2rem;
+}
+
+.food_buttons {
+  text-align: center;
+  margin-left: 0rem;
+}
+
+/* res popup*/
+.modal {
+  font-size: 1rem;
+  padding: 4rem;
+}
+.popup-overlay {
+  animation: fadeinout 0.3s linear forwards, scaleup 0.2s linear forwards;
+  opacity: 0;
+  transform: scale(0.1);
+}
+@keyframes fadeinout {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scaleup {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 2rem;
+  font-family: roboto;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.booking_form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.booking_form-submit {
+  text-align: center;
+  padding: 1rem;
+}
+
+.popup-overlay {
+  background-color: rgba(6, 6, 7, 0.5);
+}
+
+.popup_error {
+  max-width: 50%;
+}
+.popup-content {
+  background-color: rgb(251, 254, 255, 0.95);
+}
+
+@media only screen and (max-width: 800px) {
+  .modal {
+    height: 90vh;
+    width: 80%;
+  }
+  .modal > .close {
+    position: relative;
+    top: 1rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .popup-content {
+    min-width: 90%;
+  }
+  .popup-content {
+    border-radius: 5px;
+    background: linear-gradient(
+      rgb(73, 17, 28, 0.95) 10%,
+      rgb(251, 254, 255, 0.95) 10%,
+      rgb(251, 254, 255, 0.95) 90%,
+      rgb(73, 17, 28, 0.95) 90%
+    );
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -0px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .popup-content {
+    min-width: 50%;
+  }
+}
+
+/* media */
+
+@media only screen and (max-width: 500px) {
+  .title_wrapper {
+    padding: 15em;
+    margin: 0 auto;
+  }
+  .title_wrapper h2 {
+    /*color: rgba(255, 255, 255, 0.801);*/
+    color: pink; /*#d1c7bb;*/
+    font-family: newfont;
+    font-size: 4rem;
+    letter-spacing: 5px;
+
+    text-align: center;
+  }
+
+  .food_title {
+    margin-top: 5rem;
+  }
+  .food_section p {
+    color: blue;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .food_main-text {
+    width: 100%;
+  }
+  .food_main div {
+    margin: 0 auto;
+  }
+  .food_section {
+    padding: 1rem;
+    width: 90%;
+    margin-top: 10rem;
+  }
+  .food_main-column1-row2 {
+    height: auto;
+  }
+  .food_main {
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .food_title {
+    margin-top: -3rem;
+  }
+  .modal > .close {
+    top: 3.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    padding: 0;
+    width: 100%;
+  }
+
+  .title_wrapper h2 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+
+  .card_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card_wrapper p {
+    font-size: 1.4rem;
+  }
+
+  .featcard {
+    max-width: 70%;
+    margin-top: 8rem;
+  }
+  .food_main-column1 div {
+    line-height: 1.4rem;
+    font-size: 1.4rem;
+  }
+  .food_main-text {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 56.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
 }
