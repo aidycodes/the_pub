@@ -6,6 +6,8 @@ import { useState } from 'react'
 import MainButton from './components/Utils/Button'
 import Card from './components/features'
 import Food from './components/food'
+import Beergarden from './components/beergarden';
+import Location from './components/location'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
      <Hero/>
      <Card/>
     <Food/>
+    <Beergarden/>
+    <Location/>
      {/*
      features - 3 cards food events beergardern
      food -  carsole card on 1 side with tuseday night thursday night sunday speicals, blurb on otherside about food with button to book 

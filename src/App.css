@@ -4,11 +4,12 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: #5e503f;
 }
 
 .App {
   width: 100%;
-  background-color: #5e503f;
+  /* background-color: #5e503f;*/
 }
 
 .draw .MuiDrawer-paperAnchorRight {
@@ -72,6 +73,10 @@ body {
 @font-face {
   font-family: "vegan";
   src: url("./fonts/VeganStylePersonalUse-5Y58.ttf");
+}
+@font-face {
+  font-family: "Motion";
+  src: url("./fonts/MotionPersonalUseBold-2O0od.ttf");
 }
 
 .title_wrapper {
@@ -326,6 +331,55 @@ body {
   }
 }
 
+/* BeerGarden */
+.beer_card {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.beer_ghost-shape {
+  height: 30rem;
+  width: 60%;
+  background-color: transparent;
+  float: right;
+  shape-outside: polygon(90% 100%, 100% 0%, 0 0%);
+}
+.beer_text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: roboto;
+  color: #444444;
+}
+
+.beer_list {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+}
+
+.beer-title {
+  font-family: Motion;
+}
+
+.beer-title .beer-title-invs {
+  font-size: 9rem;
+  line-height: 8rem;
+}
+
+.beer-title-white {
+  font-size: 9rem;
+  font-family: Motion;
+  color: white;
+  padding: 0;
+  margin: 0;
+  line-height: 12rem;
+  margin-left: 2rem;
+}
+
 /* media */
 
 @media only screen and (max-width: 500px) {
@@ -375,6 +429,18 @@ body {
   .modal > .close {
     top: 3.5rem;
   }
+  .beer-title-white {
+    font-size: 8rem;
+    margin-left: -0.5rem;
+    line-height: 10rem;
+  }
+  .beer-title .beer-title-invs {
+    line-height: 6rem;
+  }
+  .beer_text {
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+  }
 }
 @media only screen and (max-width: 800px) {
   html {
@@ -409,6 +475,22 @@ body {
   .food_main-text {
     width: 90%;
   }
+  .beer_list {
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .beer-title .beer-title-invs {
+    font-size: 7rem;
+    line-height: 3rem;
+  }
+
+  .beer-title-white {
+    margin-left: 0.5rem;
+    font-size: 6rem;
+    line-height: 4rem;
+    color: inherit;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -419,5 +501,17 @@ body {
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 75%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .beer-title .beer-title-invs {
+    font-size: 11rem;
+    line-height: 8rem;
+  }
+
+  .beer-title-white {
+    font-size: 11rem;
+    margin-left: 2rem;
+    line-height: 12rem;
   }
 }

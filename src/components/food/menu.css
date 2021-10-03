@@ -68,8 +68,3 @@
     left: 0rem;
   }
 }
-
-@media only screen and (max-width: 400px) {
-  .popup-box {
-  }
-}
