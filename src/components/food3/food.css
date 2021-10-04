@@ -1,0 +1,9 @@
+.food_card {
+  margin: 10rem auto;
+  width: 90%;
+  height: 60vh;
+  background-image: url(./img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

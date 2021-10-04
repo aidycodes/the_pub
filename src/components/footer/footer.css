@@ -1,0 +1,54 @@
+.footer_wrapper {
+  width: 100%;
+
+  background-color: rgba(73, 17, 28);
+}
+
+.oak_title-wrapper {
+  margin: 0 auto;
+}
+.oak_title-logo {
+  margin: 1rem auto;
+  width: 10%;
+}
+
+.oak_title-wrapper {
+  margin: 2rem auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.oak_title-logo {
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.oak_title-text {
+  margin: 0 auto;
+}
+
+.contact_wrapper {
+}
+.details_wrapper {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.details_wrapper li {
+  list-style: none;
+  margin: 0;
+  font-size: 1.4rem;
+  justify-items: center;
+}
+
+.contact-info {
+  font-size: 1rem;
+}
+.address_wrapper {
+  justify-self: start;
+}
+.opening-info {
+  margin: 0 auto;
+}

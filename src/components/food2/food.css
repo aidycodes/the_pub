@@ -1,0 +1,102 @@
+.food_card {
+  margin: 10rem auto;
+  width: 90%;
+}
+
+.carrousel_wrapper {
+  margin-top: 4rem;
+}
+
+.carr_text {
+  font-size: 14rem;
+}
+.carr_text-2 {
+  font-size: 12rem;
+  line-height: 8rem;
+  position: absolute;
+  top: 0rem;
+  left: 95rem;
+  color: rgba(73, 96, 226, 0.603);
+  font-family: lato;
+  margin-top: 1rem;
+}
+.carrousel_image-1 {
+  position: relative;
+  background-image: url(img/img4.jpg);
+  background-size: cover;
+  background-position: 100% 60%;
+  background-repeat: no-repeat;
+  height: 20rem;
+}
+.carrousel_image-3 span {
+  color: rgba(10, 7, 3, 0.623);
+}
+.carrousel_image-1 span {
+  font-size: 8rem;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.carrousel_image-2 {
+  position: relative;
+  background-image: url(img/img6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+}
+.carrousel_image-3 {
+  position: relative;
+  background-image: url(img/img7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+}
+.food_img {
+  background-image: linear-gradient(
+      180deg,
+      rgb(94, 80, 63, 0.2) 90%,
+      rgba(94, 80, 63) 100%
+    ),
+    url(img/img4.jpg);
+  background-size: cover;
+  background-position: 100% 60%;
+  background-repeat: no-repeat;
+}
+.food_bk {
+  background-color: #49111c;
+  padding: 0;
+  margin: 0;
+}
+
+.food_main-column1-row1-2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: 0rem;
+  color: #f2f4f3;
+  border-radius: 5px;
+}
+.food_main-column1-row2 {
+  margin-top: 2rem;
+}
+
+.food_main-column1-row2-2 {
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.food_main-2 {
+  margin-bottom: 0rem;
+  padding: 0;
+}
+
+.food_buttons-2 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  margin-bottom: 0;
+}

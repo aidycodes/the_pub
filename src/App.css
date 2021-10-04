@@ -305,10 +305,10 @@ body {
   .popup-content {
     border-radius: 5px;
     background: linear-gradient(
-      rgb(73, 17, 28, 0.95) 10%,
-      rgb(251, 254, 255, 0.95) 10%,
-      rgb(251, 254, 255, 0.95) 90%,
-      rgb(73, 17, 28, 0.95) 90%
+      rgb(73, 17, 28) 10%,
+      rgb(251, 254, 255) 10%,
+      rgb(251, 254, 255) 90%,
+      rgb(73, 17, 28) 90%
     );
   }
   .modal > .close {
@@ -379,6 +379,20 @@ body {
   line-height: 12rem;
   margin-left: 2rem;
 }
+
+/* Location */
+
+.location_wrapper {
+  margin-top: 1rem;
+}
+
+.location_wrapper p {
+  text-align: center;
+  font-family: roboto;
+  font-size: 1rem;
+}
+
+/* Footer */
 
 /* media */
 
